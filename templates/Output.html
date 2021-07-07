@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<h1>
+    Employee Output Details for {{ All}}
+</h1>
+<table>
+    <thead>
+    <tr>
+        <th>Employee id</th>
+        <th>First Name</th>
+        <th>Last name</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for row in data% }
+    <tr>
+        <td> {{row[1]}}</td>
+        <td> {{row[2]}}</td>
+        <td> {{row[3]}}</td>
+    </tr>
+    {%endfor}
+
+
+    </tbody>
+
+</table>
+
+
+
+</html>
